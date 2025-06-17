@@ -114,5 +114,5 @@ $krb5asrep$23$admin@domain.local:...:SuperSecret123
 
 ## 👨‍💻 Credits
 
-Script oleh [YourName] untuk keperluan bootcamp & edukasi  
+Script dibuat oleh hantiq untuk keperluan bootcamp & edukasi  
 Menggunakan [Impacket](https://github.com/fortra/impacket) & [Hashcat](https://hashcat.net/hashcat/)
