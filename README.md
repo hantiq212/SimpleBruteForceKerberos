@@ -1,5 +1,5 @@
 
-# 🔐 AS-REP Roasting Full Chain Script
+# 🔐 AS-REP Roasting Full Chain
 
 AS-REP Roasting adalah teknik serangan Kerberos yang memungkinkan attacker mendapatkan hash NTLM user **tanpa perlu login atau password**, selama user tersebut **tidak mengaktifkan pre-authentication**.
 
@@ -25,23 +25,30 @@ Script ini menjalankan seluruh proses roasting secara otomatis:
 ## 📦 Kebutuhan Sistem
 
 - Python 3.8+
-- Impacket (terbaru)
 - Hashcat
 
-### 🛠️ Cara Install:
+### 🛠️ Instalasi dengan Virtual Environment (Direkomendasikan):
 
 ```bash
-pip install impacket
+# 1. Buat dan aktifkan virtual environment
+python3 -m venv venv
+source ./venv/bin/activate
+
+# 2. Install dependensi
+python3 -m pip install -r requirements.txt
+
+# 3. Install hashcat jika belum tersedia
 sudo apt install hashcat
 ```
 
 ---
 
-## 📁 Struktur File
+## 📁 Struktur File biar lebih mudah, tapi kalau ingin custom juga bisa
 
 ```
 .
 ├── asrep_fullchain.py     # script utama
+├── requirements.txt       # dependensi Python
 ├── userlist.txt           # daftar user target (1 per baris)
 └── rockyou.txt            # wordlist untuk hashcat
 ```
@@ -107,5 +114,5 @@ $krb5asrep$23$admin@domain.local:...:SuperSecret123
 
 ## 👨‍💻 Credits
 
-Script oleh hantiq untuk keperluan bootcamp & edukasi  
+Script oleh [YourName] untuk keperluan bootcamp & edukasi  
 Menggunakan [Impacket](https://github.com/fortra/impacket) & [Hashcat](https://hashcat.net/hashcat/)
