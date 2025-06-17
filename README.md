@@ -47,7 +47,7 @@ sudo apt install hashcat
 
 ```
 .
-├── asrep_fullchain.py     # script utama
+├── KerberosBrute.py     # script utama
 ├── requirements.txt       # dependensi Python
 ├── userlist.txt           # daftar user target (1 per baris)
 └── rockyou.txt            # wordlist untuk hashcat
